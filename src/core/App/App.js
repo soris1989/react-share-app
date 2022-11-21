@@ -1,12 +1,13 @@
-import logo from '../../logo.svg';
+import { ThemeProvider } from 'react-bootstrap';
 import ShareFeature from '../ShareFeature/ShareFeature';
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider dir="rtl">
       <ShareFeature />
-    </div>
+    </ThemeProvider>
+
   );
 }
 
