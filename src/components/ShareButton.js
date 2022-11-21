@@ -8,7 +8,6 @@ function ShareFeature(props) {
     useEffect(() => {
         async function share() {
             if (file) {
-                console.log('aaa')
                 const data = {
                     files: [file],
                     title: 'קובץ מצורף',
@@ -19,7 +18,7 @@ function ShareFeature(props) {
                     if (!window.navigator.canShare(data)) {
                         throw new Error('Cannot share.');
                     }
-                    
+
                     await window.navigator.share(data);
                 } catch (err) {
                     console.error(err);
