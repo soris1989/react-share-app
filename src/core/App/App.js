@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'react-bootstrap';
-import ShareFeature from '../ShareFeature/ShareFeature';
+import ShareFeature from '../ShareFeature2';
 import './App.scss';
 
 function App() {
